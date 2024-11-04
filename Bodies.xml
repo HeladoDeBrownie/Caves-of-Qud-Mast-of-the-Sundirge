@@ -1,0 +1,16 @@
+<bodies>
+    <bodyparttypevariants>
+        <bodyparttypevariant VariantOf="Body" Type="HDBrownie_Sundirge_Body" Description="Spar" />
+        <bodyparttypevariant VariantOf="Head" Type="HDBrownie_Sundirge_Head" Description="Masthead" />
+        <bodyparttypevariant VariantOf="Back" Type="HDBrownie_Sundirge_Back" Description="Yard" />
+        <bodyparttypevariant VariantOf="Foot" Type="HDBrownie_Sundirge_Foot" Description="Sundered Base" />
+    </bodyparttypevariants>
+    <anatomies>
+        <anatomy Name="HDBrownie_Sundirge_Mast" Category="Mechanical" BodyType="HDBrownie_Sundirge_Body">
+            <part Type="HDBrownie_Sundirge_Head" />
+            <part Type="HDBrownie_Sundirge_Back" />
+            <part Type="HDBrownie_Sundirge_Back" />
+            <part Type="HDBrownie_Sundirge_Foot" />
+        </anatomy>
+    </anatomies>
+</bodies>

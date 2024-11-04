@@ -4,6 +4,7 @@
         <part Name="Description" Short="Yearning for sun and stars, the obelisk refuses the earth's invitation to lie in its embrace. The wound where =pronouns.subjective= =verb:were:afterpronoun= sundered from bow or stern was smoothed but never healed by the tides of time, dimming but never extinguishing the memory of =pronouns.possessive= once-connection." />
         <part Name="ConversationScript" ConversationID="HDBrownie_Sundirge_Mast" />
         <part Name="Brain" Factions="Newly Sentient Beings-100" Wanders="true" />
+        <part Name="Body" Anatomy="HDBrownie_Sundirge_Mast" />
         <part Name="NotNameable" />
 
         <tag Name="ExcludeFromDynamicEncounters" />
@@ -25,18 +26,26 @@
         <stat Name="AV" Value="7" />
 
         <skill Name="Tactics_Charge" />
+        <skill Name="Cudgel_ChargingStrike" />
 
         <mutation Name="Wings" Level="10" Variant="HDBrownie_Sundirge_Wings" />
         <mutation Name="ElectricalGeneration" Level="1" />
         <mutation Name="Telepathy" />
+
+        <inventoryobject Blueprint="HDBrownie_Sundirge_Stomp" />
     </object>
 
     <object Name="HDBrownie_Sundirge_Wings" Inherits="Wings">
-        <part Name="Render" DisplayName="sail" />
+        <part Name="Render" DisplayName="sail" Tile="HDBrownie/Sundirge/Mast.png" />
         <part Name="SizeAdjective" Adjective="vast" />
 
         <tag Name="PartDescription" Value="Worn around Sail" />
         <tag Name="Gender" Value="neuter" />
         <tag Name="Gigantic" />
+    </object>
+
+    <object Name="HDBrownie_Sundirge_Stomp" Inherits="NaturalWeapon">
+        <part Name="Render" DisplayName="stomp" Tile="HDBrownie/Sundirge/Mast.png" ColorString="&amp;w" />
+        <part Name="MeleeWeapon" BaseDamage="2d2" Skill="Cudgel" Stat="Strength" Slot="Foot" />
     </object>
 </objects>
