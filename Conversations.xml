@@ -1,0 +1,21 @@
+<conversations>
+    <conversation ID="HDBrownie_Sundirge_Mast">
+        <choice Distribute="Start,Node" GotoID="End">May the solar wind ever find your sail.</choice>
+        <start>
+            <text>{{w|*The vast structure bristles inquisitively at your attention.*}}</text>
+            <text>{{w|*The free-standing pillar watches without eyes, senses without senses.*}}</text>
+            <text>{{w|*The giant settles firmly upon the ground and awaits your query.*}}</text>
+            <choice GotoID="Sailutations">Hello, I am =name=. Who are you?</choice>
+            <choice GotoID="What">Just what are you?</choice>
+            <choice GotoID="CompanionShip">Are you my friend?</choice>
+            <choice GotoID="RelationShip">Are you part of a ship?</choice>
+        </start>
+        <node ID="Sailutations">{{w|*You are greeted by the silent scream of the space between stars, but death does not coil around it; only a feeling of pride and freedom.*}}</node>
+        <node ID="What">
+            <text>{{w|*It occurs to you that although there may be a word for the wind in every known language, the wind itself has no need of labels. The wind is the wind, and it blows by its own whim.*}}</text>
+            <choice GotoID="End">I guess that answers my question.</choice>
+        </node>
+        <node ID="CompanionShip">{{w|*You muse on companionship and how, for two beings to be companions, it suffices for them to be going to the same place together.*}}</node>
+        <node ID="RelationShip">{{w|*You realize that even those who are no longer with us remain ever part of us.*}}</node>
+    </conversation>
+</conversations>

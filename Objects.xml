@@ -1,0 +1,36 @@
+<objects>
+    <object Name="HDBrownie_Sundirge_Mast" Inherits="Creature">
+        <part Name="Render" DisplayName="mast of the Sundirge" Tile="HDBrownie/Sundirge/Mast.png" ColorString="&amp;c" DetailColor="C" RenderString="146" />
+        <part Name="Description" Short="Yearning for sun and stars, the obelisk refuses the earth's invitation to lie in its embrace. The wound where =pronouns.subjective= =verb:were:afterpronoun= sundered from bow or stern was smoothed but never healed by the tides of time, dimming but never extinguishing the memory of its once-connection." />
+        <part Name="ConversationScript" ConversationID="HDBrownie_Sundirge_Mast" />
+        <part Name="Brain" Factions="Newly Sentient Beings-100" Wanders="true" />
+        <part Name="NotNameable" />
+
+        <tag Name="ExcludeFromDynamicEncounters" />
+        <tag Name="StartingPet" />
+        <tag Name="Storied" Value="true" />
+        <tag Name="Gender" Value="neuter" />
+        <tag Name="Gigantic" />
+
+        <property Name="Story" Value="HDBrownie_Sundirge_Story" />
+
+        <stat Name="Strength" sValue="30" />
+        <stat Name="Toughness" sValue="30" />
+        <stat Name="ColdResistance" Value="100" />
+
+        <skill Name="Tactics_Charge" />
+
+        <mutation Name="Wings" Level="10" Variant="HDBrownie_Sundirge_Wings" />
+        <mutation Name="ElectricalGeneration" Level="1" />
+        <mutation Name="Telepathy" />
+    </object>
+
+    <object Name="HDBrownie_Sundirge_Wings" Inherits="Wings">
+        <part Name="Render" DisplayName="sail" />
+        <part Name="SizeAdjective" Adjective="vast" />
+
+        <tag Name="PartDescription" Value="Worn around Sail" />
+        <tag Name="Gender" Value="neuter" />
+        <tag Name="Gigantic" />
+    </object>
+</objects>
