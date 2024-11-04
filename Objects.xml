@@ -1,7 +1,7 @@
 <objects>
     <object Name="HDBrownie_Sundirge_Mast" Inherits="Creature">
         <part Name="Render" DisplayName="mast of the Sundirge" Tile="HDBrownie/Sundirge/Mast.png" ColorString="&amp;c" DetailColor="C" RenderString="146" />
-        <part Name="Description" Short="Yearning for sun and stars, the obelisk refuses the earth's invitation to lie in its embrace. The wound where =pronouns.subjective= =verb:were:afterpronoun= sundered from bow or stern was smoothed but never healed by the tides of time, dimming but never extinguishing the memory of its once-connection." />
+        <part Name="Description" Short="Yearning for sun and stars, the obelisk refuses the earth's invitation to lie in its embrace. The wound where =pronouns.subjective= =verb:were:afterpronoun= sundered from bow or stern was smoothed but never healed by the tides of time, dimming but never extinguishing the memory of =pronouns.possessive= once-connection." />
         <part Name="ConversationScript" ConversationID="HDBrownie_Sundirge_Mast" />
         <part Name="Brain" Factions="Newly Sentient Beings-100" Wanders="true" />
         <part Name="NotNameable" />
@@ -14,9 +14,15 @@
 
         <property Name="Story" Value="HDBrownie_Sundirge_Story" />
 
-        <stat Name="Strength" sValue="30" />
-        <stat Name="Toughness" sValue="30" />
-        <stat Name="ColdResistance" Value="100" />
+        <stat Name="Strength" sValue="31" />
+        <stat Name="Agility" sValue="17" />
+        <stat Name="Toughness" sValue="53" />
+        <stat Name="Intelligence" sValue="19" />
+        <stat Name="Willpower" sValue="23" />
+        <stat Name="Ego" sValue="11" />
+        <stat Name="ColdResistance" Value="101" />
+        <stat Name="Hitpoints" Value="47" />
+        <stat Name="AV" Value="7" />
 
         <skill Name="Tactics_Charge" />
 
